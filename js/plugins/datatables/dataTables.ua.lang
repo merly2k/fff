@@ -1,0 +1,21 @@
+{
+    "sProcessing":   "Ждите...",
+    "sLengthMenu":   "Показывать _MENU_ записей",
+    "sZeroRecords":  "Данных нет.",
+    "sInfo":         "с _START_ по _END_ всего _TOTAL_ ",
+    "sInfoEmpty":    "Записей нет",
+    "sInfoFiltered": "(отфильтровано из _MAX_ записей)",
+    "sInfoPostFix":  "",
+    "sSearch":       "Искать:",
+    "sUrl":          "",
+    "oPaginate": {
+        "sFirst": "|<",
+        "sPrevious": " ",
+        "sNext": " ",
+        "sLast": ">|"
+    },
+    "oAria": {
+        "sSortAscending":  ": сортировать по возрастанию",
+        "sSortDescending": ": сортировать по убіванию"
+    }
+}

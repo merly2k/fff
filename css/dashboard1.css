@@ -1,0 +1,190 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+p.dim{font-weight:bolder; color:#268029;}
+p.dam{font-weight:bold;}
+
+.pinfo {
+    font-variant: proportional-width ;
+    font-weight: bolder;
+    min-width: 90%;
+    min-height: 550px;
+    
+    max-height: 550px;
+    overflow:auto;
+	padding: 4px;
+	margin-bottom: 20px;
+	color: #2a6496;
+	border: solid 1px;
+	border-radius: 4px;
+}
+div.sutreeview {
+    min-width: 100px;
+    min-height: 550px;
+    max-height: 550px;
+    overflow:auto;
+	padding: 4px;
+	margin-bottom: 20px;
+	color: #369;
+}
+div.sutreeview ul:first-child:before {
+    display: none;
+}
+.sutreeview, .sutreeview ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+	color: #369;
+}
+.sutreeview ul {
+    margin-left:1em;
+    position:relative
+}
+.sutreeview ul ul {
+    margin-left:.5em;
+        
+}
+.sutreeview ul:before {
+    content:"";
+    display:block;
+    width:0;
+    position:absolute;
+    top:0;
+    left:0;
+    border-left:1px solid;
+    
+    /* creates a more theme-ready standard for the bootstrap themes */
+    bottom:15px;
+}
+.sutreeview li {
+    margin:0;
+    padding:0 1em;
+    line-height:2em;
+    font-weight:700;
+    position:relative;
+}
+.sutreeview ul li:before {
+    content:"";
+    display:block;
+    width:10px;
+    height:0;
+    border-top:1px solid;
+    margin-top:-1px;
+    position:absolute;
+    top:1em;
+    left:0
+}
+.tree-indicator {
+    margin-right:5px;
+    
+    cursor:pointer;
+}
+.sutreeview li a {
+    text-decoration: none;
+    color:inherit;
+    
+    cursor:pointer;
+}
+.sutreeview li button, .sutreeview li button:active, .sutreeview li button:focus {
+    text-decoration: none;
+    color:inherit;
+    border:none;
+    background:transparent;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    outline: 0;
+}
+.fb-profile-text1{color: #ffb; text-shadow: 1px 2px 3px #666;}
+h1 {
+  margin-bottom: 20px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position:absolute ;
+  top: 51px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0px 0px 0px 40px;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  min-height: 100%;
+  min-width: 200px;
+}
+.paycard{
+    display: inline-block
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:100px;height:37px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+      margin-bottom:-12px;
+
+}
+.radio-input {
+   display: inline-block;
+}
+.drinkcard-cc:hover{
+   
+}
+
+.drinkcard-cc:checked{
+   
+}
+/* Sidebar navigation */
+.sidebar {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top:8px !important;
+  min-height: 2338px;
+  background: #fff;
+}
+.musata{
+    display: inline-flex;
+    float: right;
+    margin-top: -131px;
+    padding: 6px;
+}
+}
+.sidebar .nav {
+  margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 0;
+}
+
+/*
+ * Dashboard
+ */
+
+ /* Placeholders */
+.placeholders {
+  padding-bottom: 3rem;
+}
+
+.placeholder img {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}

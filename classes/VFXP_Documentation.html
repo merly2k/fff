@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>VFXP Documentation</title>
+</head>
+
+<body>
+<h1>VFXP - Very Fast XML Parser</h1>
+<ul>
+<li>Author: Claudio Castelpietra</li>
+<li>Email: claudio@wopweb.com</li>
+<li>Web site: http://www.wopweb.com/</li>
+<li>License: &quot;LGPL&quot;</li>
+<li>Release history:
+  <ul>
+    <li>18/11/2005 - v.1.0 - First release.</li>
+    <li>24/01/2006 - v.1.1 - Some API added. Some php compatibility issues fixed.</li>
+  </ul>
+</li>
+<li>
+Description:
+	<ul>
+	  <li>Very Fast XML Parser for PHP.</li>
+	  <li>Completely standalone: no need for any PHP extension library.</li>
+	  <li>Very fast processing, using iterative single-cycle parsing, instead of recursive or multi-step parsing.</li>
+	  <li>Very useful for just loading simple application configuration parameters.</li>
+	  <li>Strongly simplified and intuitive DOM API, with respect to the DOM Core Level 1</li>
+	  <li>Works with PHP &gt;= 3</li>
+	  <li>Limitations in version 1.0:
+	    <ul>
+	      <li>XML version and encoding declaration tags are ignored.</li>
+	      <li>DOCTYPE declaration tags are ignored.</li>
+        </ul>
+      </li>
+    </ul>
+</li>
+<li>Notes:
+  <ul>
+    <li>I developed this class because the faster extension-independent free PHP XML parser I've found took about 500 milliseconds to parse my configuration file, and this is not acceptable for a web page generation.</li>
+    <li>   This class takes about 20 times less than the previous one.</li>
+    <li>   Anyway, this it a PHP-interpreted class, so its performance cannot be compared to a C-compiled class.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2>API Reference</h2>
+<pre>
+// The Document Class
+//
+class <strong>VFXP_Document</strong> {
+	
+	// Parses XML from a file
+	//
+	<em>void</em> <strong>parseFromFile</strong>(<em>string</em> $filename);
+	
+	// Parses XML from a string
+	//
+	<em>void</em> <strong>parseFromString</strong>(<em>string</em> $content);
+	
+	// Returns a reference to the root Element
+	//
+	<em>VFXP_Element</em> & <strong>rootElement</strong>();
+	
+}
+
+// The Document Element
+//
+class <strong>VFXP_Element</strong> {
+	
+	// Returns the name of the element
+	//
+	<em>string</em> <strong>name</strong>();
+	
+	// Returns the value of the element
+	//
+	<em>string</em> <strong>value</strong>();
+	
+	// Returns true if there is at least one child with the given name
+	//
+	<em>bool</em> <strong>hasChildren</strong>(<em>string</em> $elementname = NULL);
+	
+	// Returns a reference to the first element with the given name, or NULL if not found.
+	//
+	<em>VFXP_Element</em> & <strong>firstChild</strong>(<em>string</em> $elementname = NULL);
+	
+	// Returns the value of the first child with the given name, or NULL if not found.
+	//
+	<em>string</em> <strong>childValue</strong>(<em>string</em> $elementname = NULL);
+	
+	// Returns an array of references to the subelements having a given name.
+	//
+	<em>array</em> <strong>children</strong>(<em>string</em> $elementname = NULL);
+
+	// Returns an associative array of couples (child-name => child-value)
+	//
+	<em>array</em> <strong>childrenAssociative</strong>();
+	
+	// Returns a reference to the array-map of the attribute-name=>attribute-value pairs
+	//
+	<em>array</em> & <strong>attributes</strong>();
+	
+	// Returns the value of the given attribute, or NULL if not found
+	//
+	<em>string</em> <strong>attributeValue</strong>(<em>string</em> $attributename);
+
+}
+
+</pre>
+
+</body>
+</html>

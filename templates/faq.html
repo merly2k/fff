@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <title>Finansical Service</title>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <script type="text/javascript" async="" src="<?php echo WWW_JS_PATH;?>ec.js"></script>
+        <link rel="icon" href="<?php echo WWW_IMAGE_PATH?>favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="<?php echo WWW_CSS_PATH;?>bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo WWW_CSS_PATH;?>css.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo WWW_CSS_PATH;?>font-awesome.min.css">
+        <link href="<?php echo WWW_CSS_PATH;?>languages.css" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo WWW_CSS_PATH;?>style.css">
+         <link rel="stylesheet" href="<?php echo WWW_CSS_PATH;?>blosker.css">
+        
+        <!--[if lt IE 10]>
+            <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="<?php echo WWW_IMAGE_PATH?>ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+            <script src="js5shiv.min.js"></script>
+                        <![endif]-->
+        <style type="text/css">
+            .cf-hidden { display: none; } 
+            .cf-invisible { visibility: hidden; }
+        </style>
+        <!--link href="//finansicalservice.com/support/telegram-site-helper.css" rel="stylesheet">
+<script type="text/javascript" src="//finansicalservice.com/support/telegram-site-helper.js"></script-->
+
+    </head>
+    <body class="rd-navbar-static-smooth">
+        <div class="page">
+            <header class="page-head">
+                <div class="container-fluid">
+                    <nav class="rd-navbar rd-navbar-default rd-navbar-original rd-navbar-static rd-navbar--is-stuck" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-stick-up-clone="false" data-md-stick-up-offset="10px" data-lg-stick-up-offset="10px" data-lg-stick-up="false">
+                        <div class="rd-navbar-inner">
+                            <div class="rd-navbar-panel">
+                                <button class="rd-navbar-toggle" data-custom-toggle=".rd-navbar-nav-wrap" data-custom-toggle-disable-on-blur="true">
+                                    <span></span></button>
+                                <a class="rd-navbar-brand brand" href="<?php echo WWW_BASE_PATH;?>">
+                                    <img src="<?php echo WWW_IMAGE_PATH;?>logo_1.png" alt="logo" height="37" width="103">
+                                </a>
+                            </div>
+                            <div class="rd-navbar-nav-wrap">
+                                <div class="rd-navbar-nav-inner">
+                                    <ul class="rd-navbar-nav">
+                                        <li class="active"><a href="<?php echo WWW_BASE_PATH;?>">Главная</a>
+                                        </li>
+                                        <li class="rd-navbar--has-dropdown rd-navbar-submenu"><a href="#">О проекте</a>
+                                            <ul class="rd-navbar-dropdown rd-navbar-open-right">
+                                                <li><a href="<?php echo WWW_BASE_PATH;?>blog/about">О нас</a>
+                                                </li>
+                                                <li><a href="<?php echo WWW_BASE_PATH;?>blog/news">Новости</a>
+                                                </li>
+                                                <li><a href="<?php echo WWW_BASE_PATH;?>blog/webinars">Вебинары</a>
+                                                </li>
+                                                <!--li><a href="<?php echo WWW_BASE_PATH;?>blog/promote">Промоушен</a>
+                                                </li-->
+                                                <li><a href="<?php echo WWW_BASE_PATH;?>faq">Вопросы и ответы</a>
+                                                </li>
+                                                <li><a href="<?php echo WWW_BASE_PATH;?>blog/docs">Документы</a>
+                                                </li>
+                                                <li><a href="<?php echo WWW_BASE_PATH;?>about">Контакты</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="rd-navbar--has-megamenu rd-navbar-submenu"><a href="#">Продукты</a>
+                                            <ul class="rd-navbar-dropdown rd-navbar-open-right">
+                                                <li>
+                                                    <ul class="rd-navbar-list">
+                                                        <li><a href="<?php echo WWW_BASE_PATH;?>katalog/digital">Продукты</a></li>
+                                                        <!--li><a href="<?php echo WWW_BASE_PATH;?>blog/proposal">Ищем новинки</a></li-->
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="rd-navbar--has-dropdown rd-navbar-submenu"><a href="#">Реферальная система</a>
+                                            <ul class="rd-navbar-dropdown rd-navbar-open-right">
+                                                <li><a href="<?php echo WWW_BASE_PATH;?>blog/program">Условия програмы</a>
+                                                </li>
+                                                <li><a href="<?php echo WWW_BASE_PATH;?>blog/bonuse">Статусы</a>
+                                                </li>
+                                                <!--li><a href="<?php echo WWW_BASE_PATH;?>blog/upwork">Способы заработка</a></li-->
+                                            </ul>
+                                        </li>
+                                        <li class="rd-navbar--has-dropdown rd-navbar-submenu"><a href="#">вход/регистрация</a>
+                                            <ul class="rd-navbar-dropdown rd-navbar-open-right">
+                                                <li><a href="<?php echo WWW_BASE_PATH;?>auth">Вход</a>
+                                                </li>
+                                                <li><a href="<?php echo WWW_BASE_PATH;?>auth/signup">Регистрация</a>
+                                                </li>
+                                                <li><a href="<?php echo WWW_BASE_PATH;?>auth/restore">Восстановление пароля</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <!--li class="rd-navbar--has-dropdown rd-navbar-submenu">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >
+                                                <span id="lanSel" class='lang-sm' lang="<?php echo $_SESSION['curlang'];?>"></span></a>
+                                            <ul class="rd-navbar-dropdown rd-navbar-open-right" id='language' role="menu">
+                                                <li><a id="ru" href="#" ><span class='ls lang-sm lang-lbl'  lang="ru"></span></a></li>
+                                                <li><a id="uk" href="#" ><span class='ls lang-sm lang-lbl'  lang="uk"></span></a></li>
+                                                <li><a id="de" href="#" ><span class='ls lang-sm lang-lbl'  lang="de"></span></a></li>
+                                                <li><a id="en" href="#"><span class='ls lang-sm lang-lbl'  lang="en"></span></a></li>
+                                                <li><a id="fr" href="#"><span class=' ls lang-sm lang-lbl'  lang="fr"></span></a></li>
+
+
+                                            </ul>
+                                        </li-->
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+              <section class="mbr-section article mbr-parallax-background" id="msg-box8-6" style="background-image: none; padding-top: 120px; padding-bottom: 120px; position: relative; background-attachment: scroll; background-size: auto auto;" data-jarallax-original-styles="background-image: url(&quot;../../img/uzbg2.jpg&quot;); padding-top: 120px; padding-bottom: 120px; position: relative;">
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(34, 34, 34);"> </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 text-xs-center">
+             <h3 class="header-blue">Часто задаваемые вопросы.</h3>
+        </div>
+      </div>
+    </div>
+    <div style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -100;" id="jarallax-container-0">
+      <div style="background-position: 50% 50%; background-size: 100% auto; background-repeat: no-repeat no-repeat; background-image: url(&quot;../../img/uzbg2.jpg&quot;); position: fixed; top: 0px; left: 0px; width: 1583px; height: 1081.98px; overflow: hidden; pointer-events: none; margin-left: 0px; margin-top: -140.49px; visibility: visible; transform: translate3d(0px, -137.255px, 0px);"></div>
+    </div>
+</section> 
+            <section class="section-60 section-sm-90 section-lg-bottom-120 bg-wasip text-left">
+                <div class="shell">
+                    <div class="range range-sm-center">
+                        <div class="col-md-6">
+                        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingOne">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                          КАК НАЧАТЬ РАБОТАТЬ С НАШЕЙ КОМПАНИЕЙ?
+                                        </a>
+                                    </h4>
+
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                    <div class="panel-body">
+                                    Для начала ознакомьтесь со всей информацией на главной странице. Если вас заинтересовал данный проект - пройдите регистрацию. Если опыта работы в данном бизнесе у вас мало, обратитесь за помощью одному из лидеров в скайп-группах. 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            КАК МОЖНО С ВАМИ СВЯЗАТЬСЯ?
+                                        </a>
+                                    </h4>
+
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                    <div class="panel-body">
+                                    Для связи по поводу работы сайта, ошибок, предложений по проекту пишите на адрес: admin@finansicalservice.com .
+                                    По вопросам работы структуры или личного кабинета, а так же если вы не нашли в списке FAQ интересующий вас вопрос,
+                                    на сайте работает онлайн поддержка.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                           С КАКИМИ ЭЛЕКТРОННЫМИ ВАЛЮТАМИ РАБОТАЕТ НАША КОМПАНИЯ?
+                                        </a>
+                                    </h4>
+
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                    <div class="panel-body">
+                                    На сегодняшний день, наш проект работает с  Perfect Money, Bitcoin, Рayeer, NixMoney, QIWI Wallet.
+                                    При большом колличестве обращений пользователей, могут быть подключены и другие платёжные системы.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-md-6">
+                        <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading4">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                                            КАК ЧАСТО ОСУЩЕСТВЛЯЮТСЯ НАЧИСЛЕНИЯ? И НАСКОЛЬКО БЫСТРО ПРОИЗВОДЯТСЯ ВЫПЛАТЫ?
+                                        </a>
+                                    </h4>
+
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading4">
+                                    <div class="panel-body">
+                                    Деньги начисляются каждый день. Выплаты производится раз в 15 дней.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading5">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                        ЯВЛЯЕТСЯ ЛИ ВАША КОМПАНИЯ ФИНАНСОВОЙ ПИРАМИДОЙ?</h4></a>
+
+                                </div>
+                                <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                                    <div class="panel-body">
+                                        Нет!  Финансовая пирамида — способ обеспечения дохода участникам структуры за счёт постоянного привлечения денежных средств. Доход первым участникам пирамиды выплачивается за счет вкладов последующих участников.
+                                        В нашем случае вы вкладываете деньги в высокодоходный бизнес с высоким и быстрым оборотом фондов.
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading6">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+                                           МОЖНО ЗАРАБАТЫВАТЬ БЕЗ ВЛОЖЕНИЙ?
+                                        </a>
+                                    </h4>
+
+                                </div>
+                                <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                                    <div class="panel-body">
+                                    Да можно! Мы предоставляем вам возможность не только зарабатывать без начальных вложений, но и подниматься в статусе вплоть до "Platinum" пакета.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+           <footer class="page-foot page-foot-default bg-gray-dark">
+                <div class="shell section-top-70 section-bottom-50 text-xs-left">
+                    <div class="range">
+                        <div class='col-md-2'></div>
+                        <div class='col-md-9'><img  class='img-responsive inline' src="<?php echo WWW_IMAGE_PATH?>wallets.png"></div>
+                    </div>
+                </div>
+                <div class="shell">
+                    <hr>
+                </div>
+                <div class="shell section-top-50 section-bottom-30 small text-spacing-50 text-xs-left">
+                    <!--p>Ожидаемая прибыль рассчитывается на основе процентных ставок ваших инвестиционных пакетов, по состоянию на 01 число месяца,
+                        бонусов от первых двух уровней реферальной программы и процентов прибыли от ваших рефералов нижних уровней.
+                        Ваши инвестиции, используются для финансирования основного вида деятельности компании 
+                        в соответствии с федеральным законодательством. 
+                    </p-->
+
+                </div>
+                <div class="shell section-top-15 section-bottom-60">
+                    <div class="range text-center">
+                        <div class="cell-xs-4 text-xs-right cell-xs-push-1">
+                            <ul class="list-inline list-inline-xs">
+                                <!--li><a class="icon icon-sm-custom link-tundora-inverse fa-instagram" href="#"></a></li>
+                                <li><a class="icon icon-sm-custom link-tundora-inverse fa-facebook" href="#"></a></li>
+                                <li><a class="icon icon-sm-custom link-tundora-inverse fa-twitter" href="#"></a></li-->
+                            </ul>
+                        </div>
+                        <div class="cell-xs-8 text-xs-left text-spacing-0">
+                            <p class="rights"><span>FinansicalService Inc&deg;</span><span>&nbsp;©&nbsp;</span><span id="copyright-year">2017</span><span>. </span><br class="veil-sm">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="snackbars" id="form-output-global"></div>
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="Close"></button>
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__cent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+        <script src="<?php echo WWW_JS_PATH;?>bootstrap.min.js"></script>
+        <script src="<?php echo WWW_JS_PATH;?>jquery.easing.min.js"></script>
+        <script src="<?php echo WWW_JS_PATH;?>wow.min.js"></script>
+        <script src="<?php echo WWW_JS_PATH;?>jquery.scrollTo.js"></script>
+        <script src="<?php echo WWW_JS_PATH;?>nivo-lightbox.min.js"></script>
+        <script src="<?php echo WWW_JS_PATH;?>custom.js"></script>
+        <script src="<?php echo WWW_JS_PATH;?>core.js"></script>
+        <script src="<?php echo WWW_JS_PATH;?>script.js"></script>
+        <script src="<?php echo WWW_JS_PATH;?>main.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                var currentId;
+                var curlang = '<?php echo $_SESSION["curlang"];?>';
+                        var langage = (curlang || navigator.language || navigator.browserLanguage).split('-')[0];
+                if (!currentId) {
+                    $('#lanSel').attr('lang', langage);
+                }
+                ;
+                $('.ls').on('click',
+                        function (e)
+                        {
+                            var langage = ($(this).attr('lang')); // do stuff
+                            $('#lanSel').attr('lang', langage);
+                            $.ajax({
+                                url: "<?php echo WWW_BASE_PATH;?>/sss/",
+                                cache: false,
+                                type: "POST",
+                                data: 'curlang=' + langage,
+                                success: function (data) {
+                                    if (console && console.log) {
+                                        window.location.reload();
+                                    }
+                                }
+                            });
+                        });
+            });
+
+        </script>
+
+<!--script type="text/javascript">
+telegramSiteHelper={"apiUrl":"//finansicalservice.com/support/telegram-site-helper-api.php", "translationType":"lp", "type":"popup", "showLabel":true, "parentElementId":"", "popupbyelement":"", "chatPosition":"br", "attachFile":true, "maxFileSize":"2048", "requireName":true, "overrideChatCustomerName":null, "requirePhone":true, "mainColor":"#cdfcfc", "accentColor":"#030069", "textColor":"#400000", "fontFamily":"Arial", "boxWidth":"200px", "boxHeight":"300px", "boxZindex":"999999", "label":"Онлайн чат", "yourName":"Введите Ваше имя", "yourPhone":"Введите Ваш телефон", "startChat":"Начать чат", "enterYourMessage":"Введите Ваше сообщение и нажмите Enter", "you":"Вы", "manager":"Менеджер", "noManagersAvailable":"Нет менеджеров онлайн", "attachFileTitle":"Прикрепить файл", "maxFileSizeError":"Ошибка: максимальный размер файла:", "base64string":"data:audio/mp3;base64,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///////////////////9AJptuSSySXNupuQBAzGDNYi80v1z4dkrcEAyXzDAQ5WMXP2AiorfR3uFlyZtVW4ywVWFaxNioVM17QFBHw2QVip2W0iPfUHZZBKG540kjXn6AnaVl/qI345X/1f7epj/UccZ7WIvlyCsO/Xdzqdf+ve18zb0r9ptTfvlL0vua/Gs5hnYKVbmluZvX0r+ahcw84Aezcp0s5xVl6glpJuONyuOSifAHQ6pWUwhNjibY0FleqVQwkVFR0DLtISVImSFU0KSJNksKcshMliaeKuRNXktjYNQ9yQakA2EMFR4NUFrWrKFnWBa9qYaK0VYqio0rB0mypRxJrNNrRRy01tYrRTiqFQdIrDSKwsMSa1k//uQwPGAGpmjOaw9DbJsqqU1h7G1mrRVrTWtrDSKoc7OsNKwzNNFNNNRVrTSqLBzrDSsmwVRBKX/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////tklJKU1S2AoNQaBmHohDyQCuv5E8tOio0HypwuojYnBNVJdg0KQsMh4aTSTSTSTODR0ojYaZld/KIkhIEBiQIWYTQuCzSj4WicaUz1NGnAYEKAzD4uHZni0UjTiy2dnOLKLLKPi8392vKk4sootnZ2LKOLMtBc0/+VJxpRZZRZlw7FllXGzTsztNGnFlFFlXFw7M8XlSU9T///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////uQwP+AHoGTK6elDapfs9kwxJm1//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//uQwP+AMYABLgAAACAAACXAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"}
+document.addEventListener("DOMContentLoaded", function(){startTelegramSiteHelper(telegramSiteHelper);});
+</script-->
+    <!-- Start SiteHeart code -->
+    <script>
+    (function(){
+    var widget_id = 876578;
+    _shcp =[{widget_id : widget_id}];
+    var lang =(navigator.language || navigator.systemLanguage 
+    || navigator.userLanguage ||"en")
+    .substr(0,2).toLowerCase();
+    var url ="widget.siteheart.com/widget/sh/"+ widget_id +"/"+ lang +"/widget.js";
+    var hcc = document.createElement("script");
+    hcc.type ="text/javascript";
+    hcc.async =true;
+    hcc.src =("https:"== document.location.protocol ?"https":"http")
+    +"://"+ url;
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hcc, s.nextSibling);
+    })();
+    </script>
+    <!-- End SiteHeart code -->
+        <a href="#" id="ui-to-top" class="ui-to-top fa fa-angle-up active"></a></body></html>

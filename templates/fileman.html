@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- jQuery 2.0.2 -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    
+    </head>
+    <body>
+        <div><input type="button" data-lang-t="T_SelectFile" data-lang-v="SelectFile" onclick="setFile()" value="Выбор" id="btnSelectFile" title="Выбрать выделенные файлы"></div>
+
+         <div style="display: none;" id="pnlLoading">
+          <span data-lang="LoadingFiles">Загрузка файлов...</span><br>
+          <img src="images/loading.gif" title="Loading files, please wait...">
+          </div>
+          <div style="display: none;" id="pnlEmptyDir" data-lang="DirIsEmpty">Директория пуста</div>
+          <div style="display: none;" id="pnlSearchNoFiles" data-lang="NoFilesFound">Файлы не найдены</div>
+         <ul class="thumbView" style="display: block;" id="pnlFileList"><li class="ui-draggable" data-path="/fileman/Uploads/LICENSE.txt" data-time="1391032549" data-icon="images/filetypes/file_extension_txt.png" data-w="0" data-h="0" data-size="35147" data-icon-big="images/filetypes/big/file_extension_txt.png" title="LICENSE.txt"><img style="background-image: url(&quot;images/filetypes/big/file_extension_txt.png&quot;);" src="images/blank.gif" class="icon"><span class="time">29/01/2014 23:55</span><span class="name">LICENSE.txt</span><span class="size">34.32 KB</span></li><li class="selected" data-path="/fileman/Uploads/roxy-fileman-logo.gif" data-time="1391032477" data-icon="images/filetypes/file_extension_gif.png" data-w="289" data-h="127" data-size="13695" data-icon-big="/fileman/Uploads/roxy-fileman-logo.gif" title="roxy-fileman-logo.gif"><img style="background-image: url(&quot;php/thumb.php?f=%2Ffileman%2FUploads%2Froxy-fileman-logo.gif&amp;width=140&amp;height=120&quot;);" src="images/blank.gif" class="icon"><span class="time">29/01/2014 23:54</span><span class="name">roxy-fileman-logo.gif</span><span class="size">13.37 KB</span></li></ul>
+       

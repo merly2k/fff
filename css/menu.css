@@ -1,0 +1,25 @@
+.mini-submenu{
+  display:inline;  
+  //border: 2px solid rgba(255, 255, 255, 0.9);
+  color:#fff;
+  border-radius: 3px;
+  width: 50px;
+  
+
+}
+
+.mini-submenu:hover{
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+
+#slide-submenu{
+  //background: rgba(0, 0, 0, 0.6);
+  display: block ;
+  padding: 0 8px;
+  border-radius: 0px;
+  cursor: pointer;
+  
+}
