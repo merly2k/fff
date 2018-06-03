@@ -3,10 +3,9 @@
 This README would normally document whatever steps are necessary to get your application up and running.
 
 ### What is this repository for? ###
-ff1 fast flexibly php framework
+fff fast flexibly php framework
 * Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Version 1.108
 
 ### How do I get set up? ###
 
