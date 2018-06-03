@@ -5,7 +5,7 @@ This README would normally document whatever steps are necessary to get your app
 ### What is this repository for? ###
 fff fast flexibly php framework
 * Quick summary
-* Version 1.108
+* Version 2.12
 
 ### How do I get set up? ###
 
