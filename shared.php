@@ -56,30 +56,6 @@ function l($frase) {
     return $frases[$frase];
 }
 
-function pismo($subject,$usermail,$html){
-
-$mail = new PHPMailer(true);
-$mail->IsSMTP();
-$mail->CharSet = 'UTF-8';
-
-$mail->Host       = "mail.finansicalservice.com"; // SMTP server example
-$mail->SMTPDebug  = 0;                     // enables SMTP debug information (for testing)
-$mail->SMTPAuth   = true;                  // enable SMTP authentication
-$mail->Port       = 25;                    // set the SMTP port for the GMAIL server
-$mail->Username   = "info@finansicalservice.com"; // SMTP account username example
-$mail->Password   = "123123123qweqweqwe";        // SMTP account password example
-
-$mail->From = $email;
-$mail->FromName = $name;
-$mail->setFrom('info@finansicalservice.com', 'Support of the FinansicalService');
-$mail->addReplyTo('info@finansicalservice.com', 'Support of the FinansicalService');
-$mail->addAddress($usermail, 'User');
-$mail->Subject = $subject;
-$mail->msgHTML($html);
-$mail->AltBody = strip_tags($html,'');
-$mail->send();
-}
-
 function strToHex($string){
     $hex = '';
     for ($i=0; $i<strlen($string); $i++){

@@ -14,13 +14,17 @@ $template='tool'; //default template name
 require_once $p.'/config.php';
 require_once $p.'/shared.php';
 //require $p.'/vendor/autoload.php';
-function __autoload($class_name) {
+spl_autoload_register("autoload");
+require_once __DIR__ . '/vendor/autoload.php';
+function autoload($class_name) {
     $possibilities = array(
         APP_PATH . DS . $class_name . '.php',
         APP_PATH . DS . "classes" . DS . $class_name . '.php',
-        APP_PATH . DS . "classes" . DS .'Facebook'.DS. $class_name . '.php',
-    );
+        APP_PATH . DS . "classes" . DS .  str_replace('\\', DS , $class_name) . '.php'
+        );
+        
     foreach ($possibilities as $file) {
+        //echo $file."<br>";
         if (file_exists($file)) {
             require_once($file);
             return true;
@@ -47,7 +51,7 @@ unset($app);
 if (PRODUCT == 'dev') {
 
 
-      $log = new log2file;
+      $log = new \log2file;
 
      if (!error_get_last()):
          return 1;

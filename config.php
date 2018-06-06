@@ -16,9 +16,7 @@ define("WWW_JS_PATH", WWW_BASE_PATH . "js/"); //пути к файлам ява�
 define("WWW_IMAGE_PATH", WWW_BASE_PATH . "img/"); //пути к файлам изображений
 define("WWW_MEDIA_PATH", WWW_BASE_PATH . "media/"); //пути к файлам
 define("APP_LOG", APP_PATH . DS . "logs"); //пути к файлам логов
-define("APP_ID", '1177031672395241');
-define("APP_SECRET", 'b26e40e2c6378e06c64f92b7d6815d29');
-define("FB_API", '2.8');
+
 if (PRODUCT == "dev") {
     error_reporting(99999);
     define("DB_HOST", "localhost");   //Database host.
